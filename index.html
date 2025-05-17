@@ -61,8 +61,6 @@
           required
         />
         <br />
-        <input type="text" id="repo" placeholder="Tên repo (user/repo)" required />
-        <br />
         <input type="file" id="fileInput" name="file" accept=".bin" required />
         <br />
         <input type="submit" value="Tải lên" />
@@ -77,7 +75,7 @@
 
         // Lấy giá trị từ form
         const token = document.getElementById("token").value;
-        const repo = document.getElementById("repo").value;
+        const repo = "ryanjtr/WebUploadFileBin"; // Hardcode repository name
         const fileInput = document.getElementById("fileInput");
         const messageDiv = document.getElementById("message");
         const errorDiv = document.getElementById("error");
