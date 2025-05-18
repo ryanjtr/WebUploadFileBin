@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Đường dẫn đến thư mục upload
-UPLOAD_DIR="upload"
+UPLOAD_DIR="uploads"
 
 # Kiểm tra xem thư mục upload có tồn tại không
 if [ -d "$UPLOAD_DIR" ]; then

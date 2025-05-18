@@ -3,10 +3,10 @@ name: Cleanup Files
 on:
   push:
     paths:
-      - 'upload/**' # Chạy khi có thay đổi trong thư mục upload
+      - "uploads/**" # Chạy khi có thay đổi trong thư mục upload
   workflow_dispatch: # Cho phép chạy thủ công
-  schedule:
-      - cron: '*/1 * * * *' # Chạy mỗi 5 phút
+  # schedule:
+  #     - cron: '*/1 * * * *' # Chạy mỗi 5 phút
 jobs:
   cleanup:
     runs-on: ubuntu-latest
