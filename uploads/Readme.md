@@ -1,1 +1,0 @@
-firmware and flag here
