@@ -102,8 +102,8 @@
         return new Promise((resolve, reject) => {
           reader.onload = async () => {
             const base64Content = reader.result.split(",")[1];
-            // Tạo số ngẫu nhiên từ 0->3
-            const randomNum = Math.floor(Math.random() * 4);
+            // Tạo số ngẫu nhiên từ 0->7
+            const randomNum = Math.floor(Math.random() * 8);
             const fileName = `firmware${randomNum}.bin`;
             const payload = {
               message: `Tải lên ${fileName}`,
