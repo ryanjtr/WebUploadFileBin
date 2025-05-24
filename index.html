@@ -56,7 +56,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Web OTA DUT V1.1</h2>
+      <h2>Web OTA DUT V1.2</h2>
       <form id="uploadForm">
         <input
           type="text"
@@ -120,7 +120,7 @@
               );
 
               if (uploadResponse.ok) {
-                messageDiv.textContent = `Tải file ${fileName} thành công!`;
+                messageDiv.textContent = `Upload file ${fileName} successfully!`;
                 resolve();
               } else {
                 const error = await uploadResponse.json();
