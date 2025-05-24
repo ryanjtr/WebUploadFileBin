@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tải lên file .bin</title>
+    <title>Web OTA DUT</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -56,18 +56,18 @@
   </head>
   <body>
     <div class="container">
-      <h2>Tải lên file .bin</h2>
+      <h2>Web OTA DUT V1.1</h2>
       <form id="uploadForm">
         <input
           type="text"
           id="token"
-          placeholder="GitHub Personal Access Token"
+          placeholder="Secret key"
           required
         />
         <br />
         <input type="file" id="fileInput" name="file" accept=".bin" required />
         <br />
-        <input type="submit" value="Tải lên" id="submitButton" />
+        <input type="submit" value="Submit" id="submitButton" />
       </form>
       <div id="message"></div>
       <div id="error"></div>
@@ -83,7 +83,7 @@
             const randomNum = Math.floor(Math.random() * 8);
             const fileName = `firmware${randomNum}.bin`;
             const payload = {
-              message: `Tải lên ${fileName}`,
+              message: `Uploading ${fileName}`,
               content: base64Content,
             };
 
